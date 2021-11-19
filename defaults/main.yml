@@ -16,3 +16,4 @@ zigbee_mqtt_server: mqtt://localhost
 zigbee_network_key: "'!network_key network_key'"
 zigbee_generate_new_network_key: no
 zigbee_serial_port: /dev/ttyACM0
+zigbee_frontend: no

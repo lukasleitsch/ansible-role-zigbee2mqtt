@@ -32,6 +32,7 @@ Role Variables
   Zigbee2mqtt uses a known default encryption key. Therefore it is recommended to use a different one.  
   By default this role will create an random key at firstrun.
 - `zigbee_generate_new_network_key`: no
+- `zigbee_frontend`: no
 
 Dependencies
 ------------
@@ -48,7 +49,7 @@ To install zigbee2mqtt with default serial port:
 
     - name: zigbee2mqtt octoprint on raspbian
       hosts: ip_address_of_rpi
-      become: true
+      become: yes
 
       roles:
       - igami.zigbee2mqtt
@@ -60,7 +61,7 @@ To install zigbee2mqtt with custom serial port:
 
     - name: zigbee2mqtt octoprint on raspbian
       hosts: ip_address_of_rpi
-      become: true
+      become: yes
 
       roles:
       - role: igami.zigbee2mqtt
@@ -74,7 +75,7 @@ To install zigbee2mqtt with default serial port and MQTT authentication:
 
     - name: zigbee2mqtt octoprint on raspbian
       hosts: ip_address_of_rpi
-      become: true
+      become: yes
 
       roles:
       - role: igami.zigbee2mqtt

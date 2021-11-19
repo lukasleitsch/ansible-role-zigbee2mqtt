@@ -26,3 +26,8 @@ advanced:
 serial:
   # Location of CC2531 USB sniffer
   port: {{ zigbee_serial_port }}
+
+{% if zigbee_frontend is defined %}
+frontend:
+  port: 8080
+{% endif%}
