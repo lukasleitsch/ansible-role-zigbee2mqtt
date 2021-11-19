@@ -1,3 +1,4 @@
+---
 galaxy_info:
   role_name: zigbee2mqtt
   author: igami
@@ -13,8 +14,8 @@ galaxy_info:
         - buster
 
   galaxy_tags:
-  - zigbee2mqtt
-  - raspbian
-  - raspberrypi
-  - zigbee
-  - mqtt
+    - zigbee2mqtt
+    - raspbian
+    - raspberrypi
+    - zigbee
+    - mqtt
